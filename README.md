@@ -3,6 +3,10 @@ Phalcon Table Sort
 
 Phalcon HTML table sort component 
 
+## Requirements
+
+* Phalcon v1.4.x
+
 ## Installing ##
 
 Install using Composer:
