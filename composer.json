@@ -2,7 +2,7 @@
   "name": "mattdanger/phalcon-table-sort",
   "type": "library",
   "description": "Phalcon HTML table sort component",
-  "keywords": ["phalcon","sort","php],
+  "keywords": ["phalcon","sort","php"],
   "homepage": "https://github.com/mattdanger/phalcon-table-sort",
   "license": "MIT",
   "authors": [
