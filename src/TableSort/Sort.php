@@ -80,7 +80,7 @@ class Sort extends Component
   
         $order = $q['order'] ?: 'desc';
         $angle = strtolower($order) == 'asc' ? 'down' : 'up';
-        $html = $this->{$angle}_arrow;
+        $html = $this->{$angle . '_arrow'};
   
       }
 
