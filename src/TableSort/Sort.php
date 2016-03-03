@@ -9,8 +9,8 @@ use Phalcon\Mvc\User\Component;
 class Sort extends Component
 {
 
-  public $down_arrow = '<i class="fa fa-angle-down">';
-  public $up_arrow = '<i class="fa fa-angle-up">';
+  public static $down_arrow = '<i class="fa fa-angle-down">';
+  public static $up_arrow = '<i class="fa fa-angle-up">';
 
   /**
    * Return a formatted URI string with sort order
@@ -72,7 +72,7 @@ class Sort extends Component
 
     if ($default && empty($q['sort'])) {
 
-      $html = $this->down_arrow;
+      $html = self::$down_arrow;
 
     } else {
     
@@ -80,7 +80,7 @@ class Sort extends Component
   
         $order = $q['order'] ?: 'desc';
         $angle = strtolower($order) == 'asc' ? 'down' : 'up';
-        $html = $this->{$angle . '_arrow'};
+        $html = self::${$angle . '_arrow'};
   
       }
 
